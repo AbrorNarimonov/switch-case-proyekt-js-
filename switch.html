@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Valyuta Konvertor</title>
+  <link rel="stylesheet" href="switch.1.css">
+</head>
+<body>
+
+  <div class="ota">
+    <h1>Valyuta Konvertor</h1>
+
+    <input 
+      type="number" 
+      id="som" 
+      placeholder="So'm kiriting"
+      oninput="hisobla()"
+    >
+
+    <select id="valyuta" onchange="hisobla()">
+      <option value="">Valyuta tanlang</option>
+      <option value="USD">AQSH dollari (USD)</option>
+      <option value="EUR">Yevro (EUR)</option>
+      <option value="RUB">Rubl (RUB)</option>
+    </select>
+
+    <div id="natija">Natija: 0</div>
+  </div>
+
+  <script src="switch.2.js"></script>
+</body>
+</html>
